@@ -18,3 +18,9 @@ greedy_soup:
 
 plot:
     python3 main.py --plot
+
+all:
+    @just eval_individual_models
+    @just uniform_soup
+    @just greedy_soup
+    @just plot
